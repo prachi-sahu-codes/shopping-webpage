@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ***********************************************************
+NAVIGATION
+*********************************************************** */
+
+header {
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  border: 0.5px solid #a3a3a3;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-logo {
+  height: 5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.hero-icon-logo {
+  display: flex;
+}
+
+.hero-search {
+  width: 40rem;
+  height: 3.4rem;
+  margin: 0.8rem;
+  display: flex;
+  align-items: center;
+  border: 0.01px solid #dfdfdf;
+  border-radius: 5px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+
+
+.hero-svg {
+  width: 21px;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+.search-txt {
+  border: none;
+  font-size: 1.5rem;
+  width: 30rem;
+  outline-style: none;
+}
+.hero-icon-account {
+  display: flex;
+  margin-right: 2rem;
+}
+.hero-icon-account-svg {
+  width: 21px;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+/* ***********************************************************
+Grid
+*********************************************************** */
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+}
+
+.grid-fixed {
+  background-color: #202020;
+  height: calc(100vh - 5rem);
+  color: #fff;
+  grid-column: 1 / 2;
+  
+}
+
+.grid-scroll {
+  grid-column: 2 / -1;
+  height: calc(100vh - 5rem);
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: rgb(236, 255, 255);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ***********************************************************
+CONTENT FIXED
+*********************************************************** */
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.go-back {
+  height: fit-content;
+  margin: 1.2rem 2.7rem;
+  display: flex;
+  justify-content: right;
+}
+
+.back-svg {
+  width: 25px;
+  border: 1px solid #555;
+  border-radius: 50px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.account {
+  width: 18rem;
+  height: fit-content;
+  padding: 0.8rem 1rem;
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  border-radius: 6px;
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  /*border-bottom: 1px solid #b6b6b6; */
+}
+
+.account-pic {
+  width: 3rem;
+  border-radius: 50px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.account-txt {
+  font-size: 1.2rem;
+  
+}
+.account-svg {
+  width: 19px;
+  cursor: pointer;
+}
+
+.gender-class,
+.setting-class {
+  font-size: 1.8rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #3f3f3f;
+  border-top: 1px solid #3f3f3f;
+  margin: 3rem 0;
+  cursor: pointer;
+}
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+.gender-class-color {
+  color: #37cefc;
+}
+
+.setting-class {
+  font-size: 1.3rem;
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.help-account{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lang-acc {
+  width: 18rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.lang-flag {
+  width: 20px;
+  cursor: pointer;
+}
+
+.help-acc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+  height: 9rem;
+  /* background: linear-gradient(90deg, #d53369 0%, #daae51 100%); */
+  background: linear-gradient(90deg, #03b4db 0%, #2433ce 100%);
+  
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.help-message-png{
+  width: 28px;
+  margin: 1rem;
+  margin-bottom: 0.6rem;
+}
+.help-message-txta{
+    font-size: 1.5rem;
+    color: #202020;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.help-message-txtb{
+  color: #202020;
+  font-size: 600;
+}
+
+/* ***********************************************************
+CONTENT SCROLL
+*********************************************************** */
+.container-grid{
+  display: grid;
+  grid-template-rows: 12rem 30rem 1fr;
+  
+}
+
+.categories{
+ display: flex;
+ align-items: center;
+ gap: 4rem;
+}
+
+.categoryimg{
+  margin-left: 5rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-txt{
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin-top: 1rem;
+}
+
+
+.hero-img{
+  background-image: url("Frame 2 (3).png");
+  margin: 0.2rem 0;
+  
+}
+
+.hero-img-txt{
+  font-size: 1.6rem;
+  color: #fff;
+  /* color: #202020; */
+  margin: 5rem 0 0 32rem;
+  letter-spacing: 0.5px;
+}
+
+.hero-img-txt1{
+  font-size: 8rem;
+  font-weight: 500;
+  color: #fff;
+  /* color: #202020; */
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  border:8px solid #fff;
+  margin: 1rem 0 5rem 28rem;
+  letter-spacing: 0.01px;
+}
+
+/* ***********************************************************
+CARD
+*********************************************************** */
+
+.card-category-text{
+  font-size: 2rem;
+}
+
+.card-category{
+  display: inline-block;
+ margin: 2rem 1rem 1rem 5rem;
+ font-weight: 500;
+}
+
+.underline{
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #37cefc;
+  /* border-bottom: 3px solid #2433ce; */
+}
+
+.card-option-color{
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.card-color{
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #202020;
+  border-radius: 50px;
+  margin: 1rem;
+}
+
+.selected-color{
+  background-color: #202020;
+  color: #fff;
+  margin: 1rem 1rem 1rem 5rem;
+}
+
+.cards{
+  display: flex;
+  gap: 5rem;
+}
+
+.card1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  height: 20rem;
+  background-color: #b5e5f0;
+  border-radius: 9px;
+  margin: 5rem;
+}
+
+.card-fav{
+  width: 15rem;
+ display: flex;
+ justify-content: space-between;
+}
+
+.card-discount{
+  margin: 1rem;
+  padding: 0.2rem 0.4rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.card-fav-svg{
+  margin: 1rem;
+  width: 21px;
+  padding: 0.3rem;
+  background-color: red;
+  fill: #fff;
+  border-radius: 50px;
+
+}
+
+.card-title{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.shoe-png{
+  width: 12rem;
+}
+.card-rate-detail{
+  display: flex;
+ 
+}
+
+.star-rate{
+  width: 12px;
+  fill: #fff;
+}
+.star-colored{
+ fill: orange;
+}
+.star-rate-txt{
+
+}
+.card-price{
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.card-currency{
+  font-size: 1.5rem;
+  
+
+}
+
+.card-detail-svg{
+  width: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0.5px solid #c7c7c7;
+  padding: 0.3rem;
+  margin: 1rem;
+  margin-top: 0;
+}
