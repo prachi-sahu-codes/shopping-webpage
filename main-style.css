@@ -78,10 +78,10 @@ header {
   margin-right: 2rem;
 }
 
-.hero-icon-acc-anchor{
+.hero-icon-acc-anchor {
   color: #202020;
 }
-.hero-icon-acc-anchor:hover{
+.hero-icon-acc-anchor:hover {
   color: #03b4db;
 }
 
@@ -155,7 +155,7 @@ CONTENT FIXED
   /*border-bottom: 1px solid #b6b6b6; */
 }
 
-.account:hover{
+.account:hover {
   transform: scale(1.05);
 }
 
@@ -206,7 +206,7 @@ CONTENT FIXED
   align-items: center;
 }
 
-.help-acc:hover{
+.help-acc:hover {
   transform: scale(1.05);
 }
 
@@ -278,11 +278,9 @@ CONTENT SCROLL
   cursor: pointer;
 }
 
-.categoryimg:hover{
+.categoryimg:hover {
   transform: scale(1.1);
 }
-
-
 
 .category-txt {
   font-size: 1.4rem;
@@ -319,7 +317,7 @@ CONTENT SCROLL
 }
 
 /* ***********************************************************
-CARD
+OPTION FOR CATEGORY
 *********************************************************** */
 
 .card-category-text {
@@ -328,8 +326,9 @@ CARD
 
 .card-category {
   display: inline-block;
+  color: #026c83;
   margin: 2rem 1rem 1rem 5rem;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -351,7 +350,7 @@ CARD
   margin: 1rem;
   cursor: pointer;
 }
-.card-color:hover{
+.card-color:hover {
   background-color: #202020;
   color: #fff;
 }
@@ -362,16 +361,21 @@ CARD
   margin: 1rem 1rem 1rem 5rem;
 }
 
+/* ***********************************************************
+CARD
+*********************************************************** */
+
 .cards {
   display: flex;
   gap: 5rem;
 }
 
-.card1, .card2{
+.card1,
+.card2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 16rem;
+  width: 17rem;
   height: 25rem;
   background-color: #b9edf8;
   border-radius: 9px;
@@ -379,21 +383,22 @@ CARD
   cursor: pointer;
 }
 
-.card1:hover, .card2:hover{
+.card1:hover,
+.card2:hover {
   transform: scale(1.05);
 }
 
-.card-margin-left{
+.card-margin-left {
   margin-left: 5rem;
 }
 
 .card-fav {
-  width: 15rem;
+  width: 17rem;
   display: flex;
   justify-content: space-between;
 }
-.card-fav-like{
-  width: 15rem;
+.card-fav-like {
+  width: 17rem;
   display: flex;
   justify-content: right;
 }
@@ -408,11 +413,11 @@ CARD
   border-radius: 5px;
 }
 
-.card-fav-svg{
+.card-fav-svg {
   margin: 1rem;
   width: 21px;
   padding: 0.3rem;
-  fill: rgb(126, 126, 126);
+  fill: #5e5e5e;
   border-radius: 50px;
 }
 
@@ -426,10 +431,9 @@ CARD
 }
 
 .card-title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  margin: 0.4rem 1rem;
-  
+  margin: 0.2rem 1rem;
 }
 
 .shoe-png {
@@ -440,7 +444,7 @@ CARD
   border-radius: 50%; */
 }
 
-.card-shoe-png{
+.card-shoe-png {
   position: relative;
   width: 12rem;
   height: 12rem;
@@ -453,7 +457,7 @@ CARD
   display: block;
   position: absolute;
   background-color: orange;
- 
+
   top: 0;
   left: 1rem;
   border-radius: 50px;
@@ -495,7 +499,6 @@ CARD
   font-size: 2.5rem;
   font-weight: 800;
   margin: 0.2rem 1rem;
-  
 }
 
 .card-currency {
@@ -513,15 +516,204 @@ CARD
 } */
 
 /* ***********************************************************
-CARD
+WISHLIST CARD (html)
 *********************************************************** */
 
-.fav-cards{
+/* .container-grid1 {
+  display: grid;
+  grid-template-rows: 12rem 1fr;
+} */
+
+.categories-underline {
+  border-bottom: 1px solid #dadada;
+}
+
+.card-category-font {
+  font-size: 2rem;
+}
+
+.wishlist-cards {
   display: flex;
   flex-direction: column;
+}
+.wishlist-rowtwo {
+  display: flex;
+}
+
+.wishlist-card1 {
+  display: grid;
+  grid-template-columns: 12rem 1fr 5rem;
+  width: 50rem;
+  height: 12rem;
+  background-color: #b9edf8;
+  border-radius: 9px;
+  margin: 2rem 0 2rem 5rem;
+  cursor: pointer;
+}
+
+.wishlist-card1:hover,
+.wishlist-card2:hover {
+  transform: scale(1.05);
+}
+
+.shoe-png-margin {
+  margin-top: 1rem;
+}
+
+.wishcard-shoe-png {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+}
+.wishcard-shoe-png::before {
+  content: "";
+  width: 10rem;
+  padding-bottom: 10rem;
+  display: block;
+  position: absolute;
+  background-color: orange;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 50px;
+  z-index: 0;
+}
+
+.wishlist-card-details {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.position-card-price {
+  margin: 0.6rem 1rem;
+}
+.position-rate-detail {
+  margin: 0.2rem 1rem;
+}
+
+.card-delete-svgclass {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+.card-delete-svg {
+  fill: #5e5e5e;
+  width: 2.2rem;
+ 
+}
+
+/* ***********************************************************
+WISHLIST CARD (html)
+*********************************************************** */
+
+.cart-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   
 }
 
-.fav-card1{
+.later-remove{
+  display: flex;
+}
 
+.later-remove-txt{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0.2rem 1rem;
+  font-weight: 900;
+  color: #026c83;
+  /* background-color: #88e3f5;
+  padding: 0.2rem 1rem;
+  border-radius: 4px; */
+}
+
+.remove-color{
+  color: rgb(250, 51, 51);
+}
+
+.card-inde{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.card-inde-svg{
+  width: 2.2rem;
+  stroke: #5e5e5e;
+  
+}
+
+.card-inde-txt{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.3rem 0;
+}
+
+.card-inde-svg-light{
+  stroke: #949494;
+}
+
+.checkout-bg{
+ background-color: #b9edf8;
+ margin: 2rem;
+ margin-right: 5rem;
+ border-radius: 9px;
+ width: 40rem;
+}
+
+.card-category-font1{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+ 
+}
+
+.cart-category-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.cart-category-box-bold{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #202020;
+ 
+  border-top: 0.01px solid #03b3db7e;
+  border-bottom: 0.01px solid #03b3db7e;
+  
+}
+
+.cart-category-color{
+  color: #026c83;
+  
+}
+.cart-category-checkout{
+  display: flex;
+  justify-content: right;
+  padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+}
+.checkoutcategory-color{
+  display: flex;
+  align-items: center;
+  background-color: #026c83;
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 9px;
+}
+
+.cart-category-checkoutsvg{
+  width: 2rem;
+}
+.cart-category-checkouttxt{
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
 }
