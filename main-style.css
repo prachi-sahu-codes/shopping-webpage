@@ -153,6 +153,7 @@ CONTENT FIXED
   border-radius: 6px;
   margin: 0.5rem 0.5rem 0 0.5rem;
   /*border-bottom: 1px solid #b6b6b6; */
+  margin-top: 3rem;
 }
 
 .account:hover {
@@ -542,7 +543,7 @@ WISHLIST CARD (html)
 
 .wishlist-card1 {
   display: grid;
-  grid-template-columns: 12rem 1fr 5rem;
+  grid-template-columns: 12rem 1fr 4.5rem 4.5rem;
   width: 50rem;
   height: 12rem;
   background-color: #b9edf8;
@@ -595,28 +596,27 @@ WISHLIST CARD (html)
   display: flex;
   align-items: center;
   margin: 1rem;
+  margin-left: 0;
 }
 .card-delete-svg {
   fill: #5e5e5e;
   width: 2.2rem;
- 
 }
 
 /* ***********************************************************
 WISHLIST CARD (html)
 *********************************************************** */
 
-.cart-grid{
+.cart-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
 }
 
-.later-remove{
+.later-remove {
   display: flex;
 }
 
-.later-remove-txt{
+.later-remove-txt {
   text-transform: uppercase;
   font-size: 1.2rem;
   margin: 0.2rem 1rem;
@@ -627,51 +627,48 @@ WISHLIST CARD (html)
   border-radius: 4px; */
 }
 
-.remove-color{
+.remove-color {
   color: rgb(250, 51, 51);
 }
 
-.card-inde{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
+.card-inde {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-inde-svg{
+.card-inde-svg {
   width: 2.2rem;
   stroke: #5e5e5e;
-  
 }
 
-.card-inde-txt{
+.card-inde-txt {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 0.3rem 0;
 }
 
-.card-inde-svg-light{
+.card-inde-svg-light {
   stroke: #949494;
 }
 
-.checkout-bg{
- background-color: #b9edf8;
- margin: 2rem;
- margin-right: 5rem;
- border-radius: 9px;
- width: 40rem;
+.checkout-bg {
+  background-color: #b9edf8;
+  margin: 2rem;
+  margin-right: 5rem;
+  border-radius: 9px;
+  width: 40rem;
 }
 
-.card-category-font1{
+.card-category-font1 {
   font-size: 2rem;
   font-weight: 400;
   margin-left: 1rem;
   margin-top: 1.5rem;
- 
 }
 
-.cart-category-box{
+.cart-category-box {
   display: flex;
   justify-content: space-between;
   padding: 1.2rem;
@@ -679,29 +676,27 @@ align-items: center;
   font-weight: 500;
 }
 
-.cart-category-box-bold{
+.cart-category-box-bold {
   display: flex;
   justify-content: space-between;
   padding: 1.2rem;
   font-size: 2rem;
   font-weight: 600;
   color: #202020;
- 
+
   border-top: 0.01px solid #03b3db7e;
   border-bottom: 0.01px solid #03b3db7e;
-  
 }
 
-.cart-category-color{
+.cart-category-color {
   color: #026c83;
-  
 }
-.cart-category-checkout{
+.cart-category-checkout {
   display: flex;
   justify-content: right;
   padding: 1.2rem 1.2rem 1.5rem 1.2rem;
 }
-.checkoutcategory-color{
+.checkoutcategory-color {
   display: flex;
   align-items: center;
   background-color: #026c83;
@@ -710,10 +705,10 @@ align-items: center;
   border-radius: 9px;
 }
 
-.cart-category-checkoutsvg{
+.cart-category-checkoutsvg {
   width: 2rem;
 }
-.cart-category-checkouttxt{
+.cart-category-checkouttxt {
   padding-left: 0.5rem;
   font-size: 1.5rem;
 }
